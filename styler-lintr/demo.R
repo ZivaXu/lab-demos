@@ -1,18 +1,18 @@
 # This script contains a demo on using the styler and lintr packages
 
 # Install and load the styler library
-install.packages("styler") 
-library(styler)
+# install.packages("styler") 
+# library(styler)
 
 # style_text example:
 # string representation of R code
-ugly_code <- "a<-function( x){1+1}   "
+# ugly_code <- "a<-function( x){1+1}   "
 
 # Print and view poorly formated code
-print(ugly_code)
+# print(ugly_code)
 
 # Use style_text to format code 
-style_text(ugly_code)
+# style_text(ugly_code)
 
 # style selection Addin example:
 # Highlight the code below and use Addins -> Style Selection
@@ -34,8 +34,8 @@ rubbish_function <- function(x, y, z) {
 
 
 # Install and load the lintr library
-install.packages("lintr")
-library(lintr)
+# install.packages("lintr")
+# library(lintr)
 
 # Enable RStudio Marker Pane to view lints
 # Menu -> Tools -> Global Options
@@ -46,6 +46,6 @@ library(lintr)
 # Session -> Set Working Directory -> To Source File Location
 
 # Run the linter on this current script
-lintr::lint("./styler-demo.R")
+lintr::lint("./demo.R")
 
 # View linting errors in Markers Tab Panel
